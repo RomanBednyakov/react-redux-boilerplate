@@ -2,7 +2,7 @@ import { TEST_ACTION_REGISTRATION } from '../../constants/ActionTypes';
 
 const initial =
   {
-    testActionRegistration: false,
+    testActionRegistration: true,
   };
 
 const registration = (state = initial, action) => {

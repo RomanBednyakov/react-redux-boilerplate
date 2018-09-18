@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { testActionLogin } from '../../redux/action/login';
 import { registrationAction } from '../../redux/action/registration';
@@ -25,14 +26,13 @@ class App extends React.Component {
   }
 
   toogleStateReduxLogin() {
-    const { flagLogin } = this.state;
-    this.setState({ flagLogin: !flagLogin });
-    this.props.testActionLogin(flagLogin);
+    this.setState({ flagLogin: !this.props.login.testActionLogin });
+    this.props.testActionLogin(!this.props.login.testActionLogin);
   }
+
   toogleStateReduxRegistration() {
-    const { flagRegistration } = this.state;
-    this.setState({ flagRegistration: !flagRegistration });
-    this.props.registrationAction(flagRegistration);
+    this.setState({ flagRegistration: !this.props.registration.testActionRegistration });
+    this.props.registrationAction(!this.props.registration.testActionRegistration);
   }
 
   render() {
@@ -44,18 +44,27 @@ class App extends React.Component {
           Change state redux login !
         </button>
         <div className="app__flag">
-          Login: {stateLogin}
+          Login: { stateLogin }
         </div>
         <button onClick={this.toogleStateReduxRegistration}>
           Change state redux registration !
         </button>
         <div className="app__flag">
-          Registration: {stateRegistration}
+          Registration: { stateRegistration }
         </div>
       </div>
     );
   }
 }
 
+App.propTypes = {
+  testActionLogin: PropTypes.func.isRequired,
+  registrationAction: PropTypes.func.isRequired,
+  login: PropTypes.shape({
+    testActionLogin: PropTypes.bool.isRequired,
+  }).isRequired,
+  registration: PropTypes.shape({
+    testActionRegistration: PropTypes.bool.isRequired,
+  }).isRequired,
+};
 export default connect(mapStateToProps, mapDispatchToProps)(App);
-
