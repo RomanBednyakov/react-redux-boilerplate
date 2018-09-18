@@ -1,3 +1,4 @@
+## react-redux-boilerplate-2018
 Simple and optimized React boilerplate. It includes:
 
 - [x] React 16.4.0
@@ -14,13 +15,13 @@ Simple and optimized React boilerplate. It includes:
 - [x] Production Config
 - [x] Custom Babel Preset with Decorators, Class Properties, Rest/Spread operator support
 - [x] Export Separate Vendor Files
-- [ ] Redux
+- [x] Redux
 
 ## Starting the dev server
 
 Make sure you have the latest Stable or LTS version of Node.js installed.
 
-1. `git clone https://github.com/KleoPetroff/react-webpack-boilerplate.git`
+1. `git clone https://github.com/RomanBednyakov/react-redux-boilerplate-2018.git`
 2. Run `npm install` or `yarn install`
 3. Start the dev server using `npm start`
 3. Open [http://localhost:8080](http://localhost:8080)
