@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { testAction } from '../../redux/action/index';
-import { registAction } from '../../redux/action/registration';
+import { testActionLogin } from '../../redux/action/login';
+import { registrationAction } from '../../redux/action/registration';
 import './app.scss';
 
 const mapStateToProps = ({ login, registration }) => ({
@@ -9,29 +9,49 @@ const mapStateToProps = ({ login, registration }) => ({
   registration,
 });
 const mapDispatchToProps = dispatch => ({
-  testAction: flag => dispatch(testAction(flag)),
-  registAction: flag => dispatch(registAction(flag)),
+  testActionLogin: flag => dispatch(testActionLogin(flag)),
+  registrationAction: flag => dispatch(registrationAction(flag)),
 });
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
-    this.toogleModal = this.toogleModal.bind(this);
+    this.state = {
+      flagLogin: false,
+      flagRegistration: false,
+    };
+    this.toogleStateReduxLogin = this.toogleStateReduxLogin.bind(this);
+    this.toogleStateReduxRegistration = this.toogleStateReduxRegistration.bind(this);
   }
 
-  toogleModal() {
-    this.props.testAction(true);
-    this.props.registAction(true);
+  toogleStateReduxLogin() {
+    const { flagLogin } = this.state;
+    this.setState({ flagLogin: !flagLogin });
+    this.props.testActionLogin(flagLogin);
+  }
+  toogleStateReduxRegistration() {
+    const { flagRegistration } = this.state;
+    this.setState({ flagRegistration: !flagRegistration });
+    this.props.registrationAction(flagRegistration);
   }
 
   render() {
+    const stateLogin = this.state.flagLogin ? 'true' : 'false';
+    const stateRegistration = this.state.flagRegistration ? 'true' : 'false';
     return (
       <div className="app">
-        <button onClick={this.toogleModal}>
-          sdsadasdsad
+        <button onClick={this.toogleStateReduxLogin}>
+          Change state redux login !
         </button>
-        <div>sdsadsasad</div>
+        <div className="app__flag">
+          Login: {stateLogin}
+        </div>
+        <button onClick={this.toogleStateReduxRegistration}>
+          Change state redux registration !
+        </button>
+        <div className="app__flag">
+          Registration: {stateRegistration}
+        </div>
       </div>
     );
   }

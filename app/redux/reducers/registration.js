@@ -1,15 +1,17 @@
+import { TEST_ACTION_REGISTRATION } from '../../constants/ActionTypes';
+
 const initial =
   {
-    registAction: false,
+    testActionRegistration: false,
   };
 
 const registration = (state = initial, action) => {
   const { data } = action;
   switch (action.type) {
-    case 'REGIST_ACTION':
+    case TEST_ACTION_REGISTRATION:
       return {
         ...state,
-        registAction: data,
+        testActionRegistration: data,
       };
     default:
       return state;

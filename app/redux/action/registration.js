@@ -1,13 +1,15 @@
-export const registAction = (data) => {
+import { TEST_ACTION_REGISTRATION, REDIRECT_HOME } from '../../constants/ActionTypes';
+
+export const registrationAction = (data) => {
   return {
-    type: 'REGIST_ACTION',
+    type: TEST_ACTION_REGISTRATION,
     data,
   };
 };
 
-export const redirectHomae = (data) => {
+export const redirectHoma = (data) => {
   return {
-    type: 'REDIRECT_HOME',
+    type: REDIRECT_HOME,
     data,
   };
 };

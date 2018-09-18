@@ -1,16 +1,17 @@
+import { TEST_ACTION_LOGIN } from '../../constants/ActionTypes';
+
 const initial =
   {
-    errorLogin: false,
-    testAction: false,
+    testActionLogin: false,
   };
 
 const login = (state = initial, action) => {
   const { data } = action;
   switch (action.type) {
-    case 'TEST_ACTION':
+    case TEST_ACTION_LOGIN:
       return {
         ...state,
-        testAction: data,
+        testActionLogin: data,
       };
     default:
       return state;
