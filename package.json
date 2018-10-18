@@ -12,7 +12,7 @@
     "test:watch": "jest --watch",
     "coverage": "jest --coverage"
   },
-  "author": "Kliment Petrov <kleopetroff@gmail.com>",
+  "author": "RBS",
   "license": "MIT",
   "jest": {
     "setupFiles": [
