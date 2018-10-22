@@ -1,0 +1,438 @@
+/*Theme Dark Amber Styles*/
+.app-wrapper_dark-theme {
+  color: #E0E0E0;
+  background-color: #38424B;
+}
+
+.app-wrapper_dark-theme .card, .app-wrapper_dark-theme .jr-card, .app-wrapper_dark-theme .page-heading {
+  background-color: #434f5a;
+}
+
+.app-wrapper_dark-theme .sub-heading, .app-wrapper_dark-theme .meta-date, .app-wrapper_dark-theme .text-muted, .app-wrapper_dark-theme .meta-comment, .app-wrapper_dark-theme .user-detail .user-description {
+  color: #adadad;
+}
+
+.app-wrapper_dark-theme .right-arrow {
+  color: lightgray;
+}
+
+.app-wrapper_dark-theme .right-arrow:after {
+  color: lightgray;
+}
+
+.app-wrapper_dark-theme a, .app-wrapper_dark-theme a.text-primary {
+  color: lightgray;
+}
+
+.app-wrapper_dark-theme a:focus, .app-wrapper_dark-theme a:hover, .app-wrapper_dark-theme a.text-primary:focus, .app-wrapper_dark-theme a.text-primary:hover {
+  color: #c7c7c7;
+}
+
+.app-wrapper_dark-theme a.badge-light {
+  color: #616161;
+}
+
+.app-wrapper_dark-theme a.badge-light:focus, .app-wrapper_dark-theme a.badge-light:hover {
+  color: #474747 !important;
+}
+
+.app-wrapper_dark-theme .text-primary {
+  color: lightgray !important;
+}
+
+.app-wrapper_dark-theme .page-link {
+  color: #596977;
+}
+
+.app-wrapper_dark-theme .page-link:focus, .app-wrapper_dark-theme .page-link:hover {
+  color: #4e5c68;
+}
+
+.app-wrapper_dark-theme .bg-primary, .app-wrapper_dark-theme .badge-primary {
+  background-color: #2d353c !important;
+  color: #E0E0E0 !important;
+}
+
+.app-wrapper_dark-theme .btn-primary {
+  border-color: #38424B;
+  background-color: #2d353c !important;
+  color: #E0E0E0 !important;
+}
+
+.app-wrapper_dark-theme .btn-primary:hover, .app-wrapper_dark-theme .btn-primary:focus, .app-wrapper_dark-theme .btn-primary:active {
+  background-color: #2d353c !important;
+  border-color: #2d353c !important;
+  color: lightgray !important;
+}
+
+.app-wrapper_dark-theme a.text-secondary {
+  color: #4e5c68;
+}
+
+.app-wrapper_dark-theme a.text-secondary:focus, .app-wrapper_dark-theme a.text-secondary:hover {
+  color: #38424b !important;
+}
+
+.app-wrapper_dark-theme .text-secondary {
+  color: #4e5c68 !important;
+}
+
+.app-wrapper_dark-theme .bg-secondary {
+  background-color: #4e5c68 !important;
+  color: lightgray !important;
+}
+
+.app-wrapper_dark-theme .badge-secondary {
+  background-color: #38424b !important;
+  color: lightgray !important;
+}
+
+.app-wrapper_dark-theme .btn-secondary {
+  background-color: #4e5c68;
+  border-color: #4e5c68;
+  color: lightgray;
+}
+
+.app-wrapper_dark-theme .btn-secondary:hover, .app-wrapper_dark-theme .btn-secondary:focus, .app-wrapper_dark-theme .btn-secondary:active {
+  background-color: #434f5a !important;
+  border-color: #434f5a !important;
+  color: lightgray !important;
+}
+
+.app-wrapper_dark-theme .app-main-header {
+  background-color: #38424B !important;
+}
+
+.app-wrapper_dark-theme .app-main-header .search-bar input {
+  background-color: #434f5a;
+}
+
+.app-wrapper_dark-theme .app-main-header .search-bar input:focus {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 575px) {
+  .app-wrapper_dark-theme .app-main-header .search-dropdown input {
+    background-color: #fff;
+  }
+}
+
+.app-wrapper_dark-theme .app-footer {
+  padding: 0 24px;
+  background-color: #38424B;
+  color: #E0E0E0;
+}
+
+.app-wrapper_dark-theme .app-footer a.text-secondary {
+  color: #E0E0E0 !important;
+}
+
+.app-wrapper_dark-theme .app-footer a.text-secondary:hover {
+  color: #c7c7c7 !important;
+}
+
+.app-wrapper_dark-theme .color-theme-header {
+  background-color: #38424B;
+}
+
+.app-wrapper_dark-theme .side-nav {
+  background-color: #2d353c !important;
+  color: #E0E0E0 !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+.app-wrapper_dark-theme .side-nav .user-profile {
+  background-color: #343d45;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  position: relative;
+  z-index: 2;
+}
+
+.app-wrapper_dark-theme .side-nav .customizer {
+  border-bottom: 0 none;
+}
+
+.app-wrapper_dark-theme .side-nav .user-detail .user-name {
+  color: lightgray;
+}
+
+.app-wrapper_dark-theme ul.nav-menu li a {
+  color: #E0E0E0;
+}
+
+.app-wrapper_dark-theme ul.nav-menu .nav-header {
+  color: #E0E0E0;
+}
+
+.app-wrapper_dark-theme ul.nav-menu > li.open > a,
+.app-wrapper_dark-theme ul.nav-menu > li > a:hover,
+.app-wrapper_dark-theme ul.nav-menu > li > a:focus {
+  background-color: #343d45;
+  color: lightgray;
+}
+
+.app-wrapper_dark-theme ul.nav-menu li.menu.open > a {
+  border-color: lightgray;
+}
+
+.app-wrapper_dark-theme ul.nav-menu li.menu > a:focus:before,
+.app-wrapper_dark-theme ul.nav-menu li.menu > a:hover:before {
+  color: lightgray;
+}
+
+.app-wrapper_dark-theme ul.nav-menu li ul {
+  background-color: #343d45;
+}
+
+.app-wrapper_dark-theme ul.nav-menu li.menu > a:before {
+  color: #E0E0E0;
+}
+
+.app-wrapper_dark-theme ul.nav-menu li.menu.open > a:before,
+.app-wrapper_dark-theme ul.nav-menu li.menu > a:focus:before,
+.app-wrapper_dark-theme ul.nav-menu li.menu li > a:hover:before {
+  color: lightgray;
+}
+
+.app-wrapper_dark-theme ul.nav-menu li.menu .sub-menu li > a:before {
+  color: #E0E0E0;
+}
+
+.app-wrapper_dark-theme ul.nav-menu li.menu.open .sub-menu li.active > a {
+  background-color: #2d353c;
+  color: #fff;
+}
+
+.app-wrapper_dark-theme ul.nav-menu li.menu .sub-menu li > a:hover,
+.app-wrapper_dark-theme ul.nav-menu li.menu .sub-menu li > a:focus,
+.app-wrapper_dark-theme ul.nav-menu li.menu.open .sub-menu li.active > a:before,
+.app-wrapper_dark-theme ul.nav-menu li.menu .sub-menu li > a:focus:before,
+.app-wrapper_dark-theme ul.nav-menu li.menu .sub-menu li > a:hover:before {
+  background-color: #2d353c;
+  color: #fff;
+}
+
+.app-wrapper_dark-theme .chat-sidenav-header,
+.app-wrapper_dark-theme .chat-tabs {
+  background-color: #22282e;
+}
+
+.app-wrapper_dark-theme .module-nav li a.active {
+  border-color: #22282e;
+}
+
+.app-wrapper_dark-theme .rbc-event {
+  background-color: #7e8f9e;
+}
+
+.app-wrapper_dark-theme .rbc-event.rbc-selected {
+  background-color: #22282e;
+}
+
+.app-wrapper_dark-theme .rbc-slot-selection {
+  background-color: rgba(56, 66, 75, 0.7);
+}
+
+.app-wrapper_dark-theme .rbc-toolbar button:active,
+.app-wrapper_dark-theme .rbc-toolbar button.rbc-active {
+  background-color: rgba(56, 66, 75, 0.9);
+  border-color: #9ba8b4;
+  color: white;
+}
+
+.app-wrapper_dark-theme .rbc-toolbar button:active:hover,
+.app-wrapper_dark-theme .rbc-toolbar button.rbc-active:hover,
+.app-wrapper_dark-theme .rbc-toolbar button:active:focus,
+.app-wrapper_dark-theme .rbc-toolbar button.rbc-active:focus {
+  background-color: rgba(56, 66, 75, 0.9);
+  border-color: #9ba8b4;
+  color: white;
+}
+
+.app-wrapper_dark-theme .rbc-toolbar button:hover,
+.app-wrapper_dark-theme .rbc-toolbar button:focus {
+  background-color: rgba(56, 66, 75, 0.9);
+  border-color: #9ba8b4;
+  color: white;
+}
+
+.app-wrapper_dark-theme .rbc-toolbar button {
+  background-color: rgba(56, 66, 75, 0.9);
+  border-color: #9ba8b4;
+  color: #9ba8b4;
+}
+
+.app-wrapper_dark-theme .rbc-show-more {
+  background-color: #7e8f9e;
+}
+
+.app-wrapper_dark-theme .rbc-off-range-bg {
+  background-color: #4e5c68;
+}
+
+.app-wrapper_dark-theme .chat-sidenav-title {
+  color: #38424B;
+}
+
+.app-wrapper_dark-theme .chat-user-item.active, .app-wrapper_dark-theme .chat-user-item:hover {
+  background-color: #a9b5bf;
+}
+
+.app-wrapper_dark-theme .contact-list i {
+  color: #38424B;
+}
+
+.app-wrapper_dark-theme .Collapsible__trigger {
+  background: #38424B;
+}
+
+.app-wrapper_dark-theme .categories-list li a:focus, .app-wrapper_dark-theme .categories-list li a:hover, .app-wrapper_dark-theme .categories-list li.active a {
+  color: #a0a0a0;
+}
+
+.app-wrapper_dark-theme .login-content .form-control:focus {
+  border-color: #38424B;
+}
+
+.app-wrapper_dark-theme .filter-with-bg-color ul li a {
+  border-color: #38424B;
+}
+
+.app-wrapper_dark-theme .filter-with-bg-color ul li a:hover, .app-wrapper_dark-theme .filter-with-bg-color ul li a:focus, .app-wrapper_dark-theme .filter-with-bg-color ul li a.active {
+  background-color: #38424B;
+}
+
+.app-wrapper_dark-theme .profile-intro .icon {
+  color: #38424B;
+}
+
+.app-wrapper_dark-theme .social-link li.active a, .app-wrapper_dark-theme .social-link li a:hover, .app-wrapper_dark-theme .social-link li a:focus {
+  color: lightgray;
+}
+
+.app-wrapper_dark-theme .actions {
+  color: lightgray;
+}
+
+.app-wrapper_dark-theme .table-hover tbody tr:hover {
+  background-color: rgba(56, 66, 75, 0.075);
+}
+
+.app-wrapper_dark-theme .border-primary {
+  border-color: lightgray !important;
+}
+
+.app-wrapper_dark-theme .breadcrumb {
+  background-color: #38424B;
+}
+
+.app-wrapper_dark-theme .desc-list.even-odd li:nth-child(2n) {
+  background-color: #38424B;
+}
+
+.app-wrapper_dark-theme .timeline-panel {
+  background-color: #4e5c68;
+}
+
+.app-wrapper_dark-theme .timeline-panel:after {
+  border-color: transparent #4e5c68;
+}
+
+.app-wrapper_dark-theme .timeline-panel:before {
+  border-color: transparent #38424B;
+}
+
+.app-wrapper_dark-theme .login-content {
+  background-color: #434f5a;
+}
+
+.app-wrapper_dark-theme .chat-module-box,
+.app-wrapper_dark-theme .chat-sidenav-content,
+.app-wrapper_dark-theme .chat-main-header,
+.app-wrapper_dark-theme .chat-main-footer,
+.app-wrapper_dark-theme .chat-textarea,
+.app-wrapper_dark-theme .module-detail-header,
+.app-wrapper_dark-theme .module-box-content,
+.app-wrapper_dark-theme .modal-box-footer {
+  background-color: #38424B;
+}
+
+.app-wrapper_dark-theme .modal-box-content {
+  background-color: #434f5a;
+}
+
+.app-wrapper_dark-theme .chat-user-item.active, .app-wrapper_dark-theme .chat-user-item:hover {
+  background-color: #22282e;
+}
+
+.app-wrapper_dark-theme .chat-textarea {
+  color: #fff;
+}
+
+.app-wrapper_dark-theme .chat-item {
+  padding: 16px;
+}
+
+.app-wrapper_dark-theme .chat-item .bubble {
+  background-color: #4e5c68;
+}
+
+.app-wrapper_dark-theme .chat-item .bubble:before {
+  border-right: 9px solid #4e5c68;
+}
+
+.app-wrapper_dark-theme .chat-item .bubble:after {
+  border-right: 8px solid #4e5c68;
+}
+
+.app-wrapper_dark-theme .chat-item.flex-row-reverse .bubble {
+  margin-right: 16px;
+  margin-left: 0;
+  background-color: #22282e;
+}
+
+.app-wrapper_dark-theme .chat-item.flex-row-reverse .bubble:before {
+  left: auto;
+  right: -9px;
+  border-left: 9px solid #22282e;
+  border-right: 0 none;
+}
+
+.app-wrapper_dark-theme .chat-item.flex-row-reverse .bubble:after {
+  left: auto;
+  right: -8px;
+  border-left: 8px solid #22282e;
+  border-right: 0 none;
+}
+
+.app-wrapper_dark-theme .module-nav li a {
+  color: #adb5bd;
+}
+
+.app-wrapper_dark-theme .module-nav li a:hover, .app-wrapper_dark-theme .module-nav li a:focus {
+  color: #343a40;
+}
+
+.app-wrapper_dark-theme .module-nav li a.active {
+  color: #343a40;
+}
+
+.app-wrapper_dark-theme .app-logo-content {
+  background-color: #38424B;
+}
+
+.app-wrapper_dark-theme .app-social-block .social-link button {
+  border: solid 1px #38424B;
+  color: #38424B;
+}
+
+.app-wrapper_dark-theme .app-social-block .social-link button:hover, .app-wrapper_dark-theme .app-social-block .social-link button:focus {
+  color: #fff;
+  background-color: #38424B;
+}

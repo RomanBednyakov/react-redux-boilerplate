@@ -1,3 +1,3 @@
-const token = localStorage.getItem('token');
-const hrefUrl = 'http://localhost:3000';
+const token = "";
+const hrefUrl = "";
 export default { token, hrefUrl };

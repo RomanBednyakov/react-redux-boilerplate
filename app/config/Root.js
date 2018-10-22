@@ -1,9 +1,9 @@
-import React from 'react';
-import { Router, Route, Switch, Redirect } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
-import { Provider } from 'react-redux';
-import App from '../containers/App';
-import store from './store';
+import React from "react";
+import { Router, Route, Switch, Redirect } from "react-router-dom";
+import { createBrowserHistory } from "history";
+import { Provider } from "react-redux";
+import App from "../containers/App";
+import store from "./store";
 
 const history = createBrowserHistory();
 const Root = () => {
@@ -19,4 +19,3 @@ const Root = () => {
   );
 };
 export default Root;
-

@@ -1,12 +1,10 @@
-import { combineReducers } from 'redux';
-import { routerReducer } from 'react-router-redux';
-import login from './login';
-import registration from './registration';
+import { combineReducers } from "redux";
+import { routerReducer } from "react-router-redux";
+import calendar from "./calendar";
 
 const rootReducer = combineReducers({
-  login,
-  registration,
-  routing: routerReducer,
+  calendar,
+  routing: routerReducer
 });
 
 export default rootReducer;

@@ -1,0 +1,142 @@
+/* Calendar Module Style */
+$app-primary: #3f51b5;
+// Flex
+@mixin display-flex($flex: flex, $flex-direction: row, $flex-wrap: nowrap) {
+  display: #{'-webkit'}-#{$flex};
+  display: #{'-moz'}-#{$flex};
+  display: #{'-ms'}-#{$flex}box;
+  display: #{'-o'}-#{$flex};
+  display: $flex;
+  -webkit-flex-direction: $flex-direction;
+  -ms-flex-direction: $flex-direction;
+  flex-direction: $flex-direction;
+  -webkit-flex-wrap: $flex-wrap;
+  -ms-flex-wrap: $flex-wrap;
+  flex-wrap: $flex-wrap;
+}
+@mixin align-items($align-items) {
+  -webkit-align-items: $align-items;
+  align-items: $align-items;
+}
+@mixin flex($flex-grow: 1, $flex-shrink: 1, $flex-basis: auto) {
+  -webkit-flex: $flex-grow $flex-shrink $flex-basis;
+  -ms-flex: $flex-grow $flex-shrink $flex-basis;
+  flex: $flex-grow $flex-shrink $flex-basis;
+}
+// stylelint-disable
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+// Box Shadow
+@mixin box-shadow($shadow...) {
+  -moz-box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+.rbc-calendar {
+  a {
+    color: $app-primary;
+  }
+  .app-calendar & {
+    @include display-flex(flex, column, nowrap);
+    @include flex(1);
+    min-height: calc(100vh - 160px);
+  }
+
+  .app-cul-calendar & {
+    min-height: calc(100vh - 200px);
+  }
+}
+
+.rbc-event {
+  background-color: $app-primary;
+}
+
+.rbc-event.rbc-selected {
+  background-color: darken($app-primary, 10%);
+}
+
+.rbc-slot-selection {
+  background-color: rgba($app-primary, 0.7);
+}
+
+.rbc-toolbar button:active,
+.rbc-toolbar button.rbc-active {
+  color: $white;
+  background-image: none;
+  @include box-shadow(none);
+  background-color: rgba($app-primary, 0.9);
+  border-color: $app-primary;
+}
+
+.rbc-toolbar button:active:hover,
+.rbc-toolbar button.rbc-active:hover,
+.rbc-toolbar button:active:focus,
+.rbc-toolbar button.rbc-active:focus {
+  color: $white;
+  background-color: rgba($app-primary, 0.9);
+  border-color: $app-primary;
+}
+
+.rbc-toolbar button:focus {
+  color: $white;
+  background-color: rgba($app-primary, 0.9);
+  border-color: $app-primary;
+}
+
+.rbc-toolbar button:hover {
+  color: $white;
+  background-color: rgba($app-primary, 0.9);
+  border-color: $app-primary;
+}
+
+.rbc-month-row {
+  min-height: 100px;
+}
+
+.rbc-event {
+  min-height: 50px;
+}
+
+@media screen and (max-width: 867px) {
+  .rbc-toolbar {
+    @include display-flex(flex, column, nowrap);
+    @include align-items(flex-start);
+  }
+
+  .rbc-toolbar .rbc-toolbar-label {
+    margin: 8px 0;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .rbc-calendar {
+    .app-calendar & {
+      min-height: 400px;
+    }
+
+    .app-cul-calendar & {
+      min-height: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 467px) {
+  .rbc-toolbar {
+    font-size: 12px;
+  }
+
+  .rbc-toolbar button {
+    padding: 5px 10px;
+  }
+}
+

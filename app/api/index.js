@@ -1,52 +1,54 @@
-import axios from 'axios';
+import axios from "axios";
 
-axios.interceptors.request.use((config) => {
-  const newConfig = config;
-  if (localStorage.getItem('token') != null) {
-    newConfig.headers.Authorization = localStorage.getItem('token');
+axios.interceptors.request.use(
+  config => {
+    const newConfig = config;
+    if (localStorage.getItem("token") != null) {
+      newConfig.headers.Authorization = localStorage.getItem("token");
+    }
+    return newConfig;
+  },
+  err => {
+    return Promise.reject(err);
   }
-  return newConfig;
-}, (err) => {
-  return Promise.reject(err);
-});
+);
 
-function ApiRequest() {
-}
+function ApiRequest() {}
 
 ApiRequest.prototype = {
-  get: (url) => {
+  get: url => {
     return axios.get(url);
   },
   post: (url, data) => {
     return axios({
-      method: 'post',
+      method: "post",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json"
       },
       url,
-      data: JSON.stringify(data),
+      data: JSON.stringify(data)
     });
   },
   put: (url, data) => {
     return axios({
-      method: 'put',
+      method: "put",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json"
       },
       url,
-      data: JSON.stringify(data),
+      data: JSON.stringify(data)
     });
   },
   delete: (url, data) => {
     return axios({
-      method: 'delete',
+      method: "delete",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json"
       },
       url,
-      data: JSON.stringify(data),
+      data: JSON.stringify(data)
     });
-  },
+  }
 };
 const api = new ApiRequest();
 

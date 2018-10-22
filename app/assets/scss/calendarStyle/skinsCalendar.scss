@@ -1,0 +1,72 @@
+.app-wrapper {
+  :root {
+    --main-color: #3f51b5;
+  }
+}
+.app-wrapper_blue{
+  --main-color: #2196f3;
+}
+.app-wrapper_indigo {
+  --main-color: #3f51b5;
+}
+.app-wrapper_cyan {
+  --main-color: #00bcd4;
+}
+.app-wrapper_amber {
+  --main-color: #ffc107;
+}
+.app-wrapper_pink {
+  --main-color: #e91e63;
+}
+.app-wrapper_deep-purple {
+  --main-color: #673ab7;
+}
+.app-wrapper_green {
+  --main-color: #4caf50;
+}
+.app-wrapper_deep-orange {
+  --main-color: #ff5722;
+}
+.app-wrapper {
+  .rbc-calendar {
+    a {
+      color: var(--main-color);
+    }
+  }
+
+  .rbc-event {
+    background-color: var(--main-color);
+  }
+
+  .rbc-event.rbc-selected {
+    background-color: var(--main-color);
+  }
+
+  .rbc-slot-selection {
+    background-color: var(--main-color);
+  }
+
+  .rbc-toolbar button:active,
+  .rbc-toolbar button.rbc-active {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+  }
+
+  .rbc-toolbar button:active:hover,
+  .rbc-toolbar button.rbc-active:hover,
+  .rbc-toolbar button:active:focus,
+  .rbc-toolbar button.rbc-active:focus {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+  }
+
+  .rbc-toolbar button:focus {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+  }
+
+  .rbc-toolbar button:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+  }
+}
