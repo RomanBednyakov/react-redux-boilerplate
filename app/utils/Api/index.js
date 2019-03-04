@@ -13,9 +13,9 @@ axios.interceptors.request.use(
   }
 );
 
-function ApiRequest() {}
+function Api() {}
 
-ApiRequest.prototype = {
+Api.prototype = {
   get: url => {
     return axios.get(url);
   },
@@ -50,6 +50,6 @@ ApiRequest.prototype = {
     });
   }
 };
-const api = new ApiRequest();
+const api = new Api();
 
 export default api;
