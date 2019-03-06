@@ -1,0 +1,46 @@
+// We use breakpoints from bootstrap with the difference that we do not
+// adhere to the mobile first approach.
+
+// Do not add new points here if you do not need their global use in many components.
+// In case you need to add a point that will be used in one or two places,
+// simply use a media query indicating the desired width
+// of the screen in the component
+
+//---extraSmall--576---small---768---medium---992---large---1200---extraLarge---
+
+$break-xl: 1200px;
+$break-lg: 992px;
+$break-md: 768px;
+$break-sm: 576px;
+
+@mixin respond-to($media) {
+  // And less breakpoints
+  @if $media == large-and-less {
+    @media only screen and (max-width: ($break-xl - 1)) { @content; }
+  }
+  @else if $media == medium-and-less {
+    @media only screen and (max-width: ($break-lg - 1))  { @content; }
+  }
+  @else if $media ==  small-and-less {
+    @media only screen and (max-width: ($break-md - 1))  { @content; }
+  }
+  // Instead xsmall-and-less use xsmall only (see below)
+
+
+  // Range breakpoints
+  @else if $media ==  xlarge-only {
+    @media only screen and (min-width: ($break-xl))  { @content; }
+  }
+  @else if $media ==  large-only {
+    @media only screen and (min-width: ($break-lg)) and (max-width: ($break-xl - 1))  { @content; }
+  }
+  @else if $media ==  medium-only {
+    @media only screen and (min-width: ($break-md)) and (max-width: ($break-lg - 1))  { @content; }
+  }
+  @else if $media ==  small-only {
+    @media only screen and (min-width: ($break-sm)) and (max-width: ($break-md - 1))  { @content; }
+  }
+  @else if $media ==  xsmall-only {
+    @media only screen and (max-width: ($break-sm - 1))  { @content; }
+  }
+}

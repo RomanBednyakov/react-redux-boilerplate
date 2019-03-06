@@ -1,9 +1,9 @@
 import React from "react";
-import { Router, Route, Switch, Redirect } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import { Provider } from "react-redux";
-import App from "../containers/App";
 import store from "./store";
+import { Route, Router, Switch } from "react-router-dom";
+import App from "../domains/App/index";
 
 const history = createBrowserHistory();
 const Root = () => {
@@ -11,8 +11,7 @@ const Root = () => {
     <Provider store={store}>
       <Router history={history}>
         <Switch>
-          <Route path="/home" component={App} />
-          <Redirect to="/home" exact />
+          <Route path="/" component={App} />
         </Switch>
       </Router>
     </Provider>

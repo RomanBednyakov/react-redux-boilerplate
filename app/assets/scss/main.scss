@@ -1,11 +1,28 @@
-//@import "../../assets/scss/calendarStyle/calendar";
-$color: #000000;
-$h2color: #740e0e;
+@import 'reset';
+@import 'breakpoints';
+@import 'variables';
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+//@font-face {
+//  font-family: 'SF Pro Display';
+//  src: url('../assets/fonts/SFProDisplay-Regular.woff2');
+//  font-weight: normal;
+//}
+//
+//@font-face {
+//  font-family: 'SF Pro Display';
+//  src: url('../assets/fonts/SFProDisplay-Semibold.woff2');
+//  font-weight: 500;
+//}
+//@font-face {
+//  font-family: 'SF Pro Display';
+//  src: url('../assets/fonts/SFProDisplay-Bold.woff2');
+//  font-weight: bold;
+//}
 body {
   font-family: 'SF Pro Display', sans-serif;
 }
